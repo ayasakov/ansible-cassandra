@@ -1,6 +1,6 @@
 ---
 - name: Install Cassandra
-  apt: pkg=cassandra={{cassandra.version}} state=present update-cache=yes
+  apt: pkg=cassandra={{cassandra.version}} state=present update-cache=yes force=yes
   register: cassandra_install
   tags:
     - packages

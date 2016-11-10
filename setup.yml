@@ -1,6 +1,7 @@
 ---
 - name: 'Cassandra Playbook'
   hosts: cassandra_nodes
+  sudo: yes
   user: root
 
   roles:

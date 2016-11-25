@@ -16,3 +16,7 @@
   notify: restart cassandra
   tags:
     - configuration
+
+- name: YCSB configuration
+  shell:
+    'cqlsh {{host}} -f /etc/ansible/roles/setup-ycsb.cql'

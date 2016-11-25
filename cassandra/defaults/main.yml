@@ -12,9 +12,10 @@ cassandra:
 cassandra_2_0:
   repo: 'deb http://www.apache.org/dist/cassandra/debian 22x main'
 
+host: '127.0.0.1'
+
 config:
   cluster_name: 'CassandraCluster'
-  host: '127.0.0.1'
   data_file_directories:
     - '/var/lib/cassandra/data'
   commitlog_directory: '/var/lib/cassandra/commitlog'

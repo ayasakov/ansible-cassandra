@@ -1,4 +1,11 @@
 ---
+- name: wait for native_transport_port
+  wait_for:
+    host='{{host}}'
+    port='9042'
+    state=started
+    timeout=300
+
 - name: YCSB configuration
   shell:
     'cqlsh {{host}} -f /etc/ansible/roles/setup-ycsb.cql'

@@ -15,7 +15,7 @@ cassandra_2_0:
 host: '127.0.0.1'
 
 config:
-  cluster_name: 'CassandraCluster'
+  cluster_name: 'Test Cluster'
   data_file_directories:
     - '/var/lib/cassandra/data'
   commitlog_directory: '/var/lib/cassandra/commitlog'

@@ -1,4 +1,7 @@
 ---
+- name: restart cassandra
+  service: name=cassandra state=restarted
+
 - name: wait for native_transport_port
   wait_for:
     host='{{host}}'
